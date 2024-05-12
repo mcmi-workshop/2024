@@ -54,12 +54,12 @@
 }
 
 .banner {
-  background-color: rgb(96, 91, 211);
+  background-color: #004AAD;
 }
 
 h2,
 h3 {
-  color: rgb(96, 91, 211);
+  color: #004AAD;
 }
 
 .custom-dropdown {
@@ -90,7 +90,7 @@ h3 {
 
 #share-url-copy-prompt {
   display: none;
-  color: #007bff;
+  color: #004AAD;
 }
 
 @media screen and (max-width: 1050px) {
