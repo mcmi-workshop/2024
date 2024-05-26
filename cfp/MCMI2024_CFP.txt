@@ -3,7 +3,7 @@ MCMI Workshop 2024 - Multi- and Cross-Modal Information for Enhanced Pattern Rec
 In conjunction with the 26th International Conference on Pattern Recognition (ICPR 2024).
 
     MCMI 2024 @ ICPR 2024
-    Website: [URL HERE]
+    Website: mcmi2024.unikore.it
     December 1, 2024, Kolkata, India
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
