@@ -52,7 +52,7 @@ Submission Guidelines
 Papers must be formatted according to Springer's LNCS template and submitted via the workshop's submission system. Submissions should present substantial new work and should not be under review elsewhere:
 
 - Paper length: 5 to 10 pages in Springer LNCS format, including figures, tables, and references.
-- Submission link: [URL HERE - EASYCHAIR]
+- Submission link: https://easychair.org/conferences/?conf=mcmi2024
 - Peer review: Single-blind
 - All submissions will be reviewed by at least three experts in the field.
 
