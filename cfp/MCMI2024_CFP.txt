@@ -51,7 +51,7 @@ Submission Guidelines
 *************************************************************************
 Papers must be formatted according to Springer's LNCS template and submitted via the workshop's submission system. Submissions should present substantial new work and should not be under review elsewhere:
 
-- Paper length: up to 10 pages in Springer LNCS format, including figures, tables, and references.
+- Paper length: up to 15 pages in Springer LNCS format, including figures, tables, and references.
 - Submission link: https://cmt3.research.microsoft.com/MCMI2024/
 - Peer review: Single-blind
 - All submissions will be reviewed by at least three experts in the field.
