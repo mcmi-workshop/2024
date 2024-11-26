@@ -21,6 +21,75 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+
+    /* Workshop Program Styles */
+    .program-section-header {
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .program-subsection {
+      margin-bottom: 20px;
+      padding-left: 15px;
+    }
+
+    .keynote-section {
+      border-left: 4px solid #3498db;
+    }
+
+    .vision-section {
+      border-left: 4px solid #e74c3c;
+    }
+
+    .emotion-section {
+      border-left: 4px solid #27ae60;
+    }
+
+    .applications-section {
+      border-left: 4px solid #9b59b6;
+    }
+
+    .applied-ai-section {
+      border-left: 4px solid #f1c40f;
+    }
+
+    .discussion-section {
+      border-left: 4px solid #95a5a6;
+    }
+
+    .closing-section {
+      border-left: 4px solid #34495e;
+    }
+
+    .break-block {
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .program-note {
+      font-style: italic;
+      margin-top: 20px;
+    }
+
+    .presentation-block {
+      margin-bottom: 15px;
+    }
+
+    .presentation-time {
+      font-weight: bold;
+    }
+
+    .presentation-title {
+      margin: 5px 0;
+    }
+
+    .presentation-authors {
+      font-style: italic;
+    }
+
   </style>
 </head>
 
@@ -114,31 +183,139 @@
               </tbody>
             </table>
 
-            <!-- <h3>Tentative Workshop Program</h3>
+            <h3>Tentative Workshop Program</h3>
             <hr>
-            <p class="text">
-              The detailed schedule is as follows:
+            
+            <div class="text">
+              <h4 class="program-section-header">Morning Session</h4>
+              <div class="program-subsection keynote-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">9:00 AM – 9:15 AM</p>
+                  <p class="presentation-title">Opening Remarks</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">9:15 AM – 10:00 AM - Keynote Presentation</p>
+                  <p class="presentation-title"><b>Title:</b> Tense of Learning Representation for Multimodal and Crossmodal Modelling</p>
+                  <p class="presentation-authors">Dr. Abhijit Das</p>
+                </div>
+              </div>
+            
+              <h5 class="program-section-header">Computer Vision & Image Processing</h5>
+              <div class="program-subsection vision-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">10:00 AM – 10:20 AM</p>
+                  <p class="presentation-title"><b>Title:</b> Advancing Image Registration with Multi-Angle Projection Keypoint Descriptors</p>
+                  <p class="presentation-authors">Lin, Daw-Tung; Lai, Yen-Fu</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">10:20 AM – 10:40 AM</p>
+                  <p class="presentation-title"><b>Title:</b> Image Fusion Survey: A Novel Taxonomy Integrating Transformer and Recent Approaches</p>
+                  <p class="presentation-authors">Bernardi, Gwendal; Strubel, David; Brisebarre, Godefroy; Garin, Jean-François; Dellandrea, Emmanuel; Ardabilian, Mohsen</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">10:40 AM – 11:00 AM</p>
+                  <p class="presentation-title"><b>Title:</b> Comprehensive Perceptual Analysis and Rating of Material Properties from Video Data</p>
+                  <p class="presentation-authors">Filip, Jiri; Dechterenko, Filip; Lukavsky, Jiri; Fleming, Roland; Schmidt, Filipp</p>
+                </div>
+              </div>
+            
+              <div class="break-block">
+                <b>11:00 AM – 11:30 AM - Coffee Break</b>
+              </div>
+            
+              <h5 class="program-section-header">Emotion & Sentiment Analysis</h5>
+              <div class="program-subsection emotion-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">11:30 AM – 11:50 AM</p>
+                  <p class="presentation-title"><b>Title:</b> Multimodal Emotion Recognition System Leveraging Decision Fusion with Acoustic and Visual Cues</p>
+                  <p class="presentation-authors">Rahman, Md. Tanvir; Ahsan, Shawly; Hossain, Jawad; Hoque, Mohammed Moshiul; Dewan, M. Ali Akber</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">11:50 AM – 12:10 PM</p>
+                  <p class="presentation-title"><b>Title:</b> M-SAM: Multimodal Sentiment Analysis Exploiting Textual and Visual Features of Social Media Memes</p>
+                  <p class="presentation-authors">Ahammad, Tanzin; Ahsan, Shawly; Hossain, Jawad; Hoque, Mohammed Moshiul</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">12:10 PM – 12:30 PM</p>
+                  <p class="presentation-title"><b>Title:</b> Dynamic Modality and View Selection for Emotion Recognition - Missing Modality Evaluation</p>
+                  <p class="presentation-authors">Menon, Luciana; Neduziak, Luiz Carlos; Barddal, Jean Paul; Lameiras Koerich, Alessandro; Britto, Alceu</p>
+                </div>
+              </div>
+            
+              <h5 class="program-section-header">Applications & Systems</h5>
+              <div class="program-subsection applications-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">12:30 PM – 12:50 PM</p>
+                  <p class="presentation-title"><b>Title:</b> TopicMapper: Geotagged URL Topic Extraction and Categorization</p>
+                  <p class="presentation-authors">Kumar, Vijay</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">12:50 PM – 13:10 PM</p>
+                  <p class="presentation-title"><b>Title:</b> Smartwatch Sensor Data Fusion: A Joint Learning Approach to Activity Recognition</p>
+                  <p class="presentation-authors">Jhala, Devraj; Nadiara, Bhargav; Bhatt, Chintan; Bruno, Alessandro; Sorce, Salvatore</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">13:10 PM – 13:30 PM</p>
+                  <p class="presentation-title"><b>Title:</b> SD-SORT - Self Driving SORT for Autonomous Vehicle</p>
+                  <p class="presentation-authors">Shinde, Omkar; Eskandarian, Azim</p>
+                </div>
+              </div>
+            
+              <div class="break-block">
+                <b>13:30 PM – 14:30 PM - Lunch Break</b>
+              </div>
+            
+              <h4 class="program-section-header">Afternoon Session</h4>
+              <h5 class="program-section-header">Applied AI & Domain Applications</h5>
+              <div class="program-subsection applied-ai-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">14:30 PM – 14:50 PM</p>
+                  <p class="presentation-title"><b>Title:</b> Vision-Language Multimodal Fusion in Dermatological Disease Classification</p>
+                  <p class="presentation-authors">La Quatra, Moreno; Cilia, Nicole Dalia; Conti, Vincenzo; Sorce, Salvatore; Garraffa, Giovanni; Salerno, Valerio Mario</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">14:50 PM – 15:10 PM</p>
+                  <p class="presentation-title"><b>Title:</b> Plastic Waste Detection Using YOLOv5 Deep Learning Object Detection Algorithm</p>
+                  <p class="presentation-authors">Prasad, Rima; Musale, Jitendra; Nagare, Dhanashri</p>
+                </div>
+              </div>
+            
+              <div class="program-subsection discussion-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">15:10 PM – 16:00 PM</p>
+                  <p class="presentation-title">Interactive Discussion and Brainstorming Session</p>
+                </div>
+              </div>
+            
+              <div class="break-block">
+                <b>16:00 PM – 16:30 PM - Coffee Break</b>
+              </div>
+            
+              <h4 class="program-section-header">Closing Session</h4>
+              <div class="program-subsection closing-section">
+                <div class="presentation-block">
+                  <p class="presentation-time">16:30 PM – 17:45 PM</p>
+                  <p class="presentation-title">Panel Discussion with Authors and Audience</p>
+                </div>
+                
+                <div class="presentation-block">
+                  <p class="presentation-time">17:45 PM – 18:00 PM</p>
+                  <p class="presentation-title">Closing Remarks</p>
+                </div>
+              </div>
+            </div>
+            
+            <p class="program-note">
+              Note: The program is subject to change and will be finalized closer to the event date. Each presentation includes time for questions and discussion.
             </p>
-            <ul class="text">
-              <li><b>9:00 AM – 9:40 AM</b> - Keynote: Dr. Abhijit Das — Tense of Learning Representation for Multimodal and Crossmodal Modelling</li>
-              <li><b>9:40 AM – 9:55 AM</b> - Smartwatch Sensor Data Fusion: A Joint Learning Approach to Activity Recognition</li>
-              <li><b>9:55 AM – 10:10 AM</b> - SD-SORT - Self Driving SORT for Autonomous Vehicle</li>
-              <li><b>10:10 AM – 10:25 AM</b> - Image Fusion Survey: A Novel Taxonomy Integrating Transformer and Recent Approaches</li>
-              <li><b>10:25 AM – 10:40 AM</b> - Coffee Break</li>
-              <li><b>10:40 AM – 10:55 AM</b> - Multimodal Emotion Recognition System Leveraging Decision Fusion with Acoustic and Visual Cues</li>
-              <li><b>10:55 AM – 11:10 AM</b> - M-SAM: Multimodal Sentiment Analysis Exploiting Textual and Visual Features of Social Media Memes</li>
-              <li><b>11:10 AM – 11:25 AM</b> - Dynamic Modality and View Selection for Emotion Recognition - Missing Modality Evaluation</li>
-              <li><b>11:25 AM – 11:40 AM</b> - Vision-Language Multimodal Fusion in Dermatological Disease Classification</li>
-              <li><b>11:40 AM – 11:55 AM</b> - Advancing Image Registration with Multi-Angle Projection Keypoint Descriptors</li>
-              <li><b>11:55 AM – 12:10 PM</b> - Comprehensive Perceptual Analysis and Rating of Material Properties from Video Data</li>
-              <li><b>12:10 PM – 12:25 PM</b> - Plastic Waste Detection Using YOLOv5 Deep Learning Object Detection Algorithm</li>
-              <li><b>12:25 PM – 12:40 PM</b> - TopicMapper: Geotagged URL Topic Extraction and Categorization</li>
-              <li><b>12:40 PM – 12:50 PM</b> - Buffer Time for Delays</li>
-              <li><b>12:50 PM – 1:00 PM</b> - Closing Remarks</li>
-            </ul>
-            <p class="text">
-              Note: The program is subject to change and will be finalized closer to the event date.
-            </p> -->
           </div>
         </div>
       </div>
