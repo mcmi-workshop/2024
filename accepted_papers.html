@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+  <title>MCMI 2024</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <link rel="icon" type="image/x-icon" href="/img/logo.ico">
+  
+  <style>
+    .menu-conference {
+      color: rgb(0, 0, 0) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+
+    /* Enhanced Table Styles */
+    .papers-table-container {
+      margin: 2rem auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 74, 173, 0.1);
+      max-width: 1200px;
+      background: white;
+    }
+
+    .papers-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: white;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .papers-table thead {
+      background-color: #004AAD;
+    }
+
+    .papers-table th {
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1em;
+      white-space: nowrap;
+    }
+
+    .papers-table td {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(0, 74, 173, 0.1);
+      vertical-align: top;
+    }
+
+    .papers-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .papers-table tbody tr {
+      transition: all 0.3s ease;
+    }
+
+    .papers-table tbody tr:hover {
+      background-color: rgba(0, 74, 173, 0.05);
+      transform: translateX(6px);
+    }
+
+    .paper-title {
+      color: #004AAD;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      font-size: 1.1em;
+      line-height: 1.4;
+    }
+
+    .paper-authors {
+      color: #666;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    /* Responsive Enhancements */
+    @media (max-width: 1024px) {
+      .papers-table-container {
+        margin: 1rem;
+        border-radius: 8px;
+      }
+      
+      .papers-table th,
+      .papers-table td {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .papers-table-container {
+        margin: 0.5rem;
+        box-shadow: none;
+        border: 1px solid rgba(0, 74, 173, 0.2);
+      }
+
+      .papers-table {
+        display: block;
+      }
+      
+      .papers-table th {
+        font-size: 1em;
+        padding: 0.75rem;
+      }
+
+      .papers-table td {
+        padding: 0.75rem;
+      }
+      
+      .papers-table thead,
+      .papers-table tbody,
+      .papers-table tr {
+        display: block;
+      }
+      
+      .papers-table tr {
+        margin-bottom: 1rem;
+        border-bottom: 2px solid rgba(0, 74, 173, 0.1);
+      }
+      
+      .papers-table td {
+        display: block;
+        text-align: left;
+        border-bottom: none;
+      }
+      
+      .papers-table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .paper-title {
+        font-size: 1em;
+      }
+
+      .paper-authors {
+        font-size: 0.9em;
+      }
+    }
+
+    /* Banner Enhancement */
+    .banner-text {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-section {
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        height: 300px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="banner" style="background: url('img/kolkata-calcutta.jpg') no-repeat center; background-size: cover; height: 500px;">
+      <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.75);">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h1 class="add-top-margin-small banner-text">
+              MCMI 2024 - Accepted Papers
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="content-section">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <div class="papers-table-container">
+              <table class="papers-table">
+                <thead>
+                  <tr>
+                    <th>Paper Title</th>
+                    <th>Authors</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Advancing Image Registration with Multi-Angle Projection Keypoint Descriptors</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Lin, Daw-Tung; Lai, Yen-Fu</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">TopicMapper: Geotagged URL Topic Extraction and Categorization</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Kumar, Vijay</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Smartwatch Sensor Data Fusion: A Joint Learning Approach to Activity Recognition</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Jhala, Devraj; Nadiara, Bhargav; Bhatt, Chintan; Bruno, Alessandro; Sorce, Salvatore</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Multimodal Emotion Recognition System Leveraging Decision Fusion with Acoustic and Visual Cues</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Rahman, Md. Tanvir; Ahsan, Shawly; Hossain, Jawad; Hoque, Mohammed Moshiul; Dewan, M. Ali Akber</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">M-SAM: Multimodal Sentiment Analysis Exploiting Textual and Visual Features of Social Media Memes</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Ahammad, Tanzin; Ahsan, Shawly; Hossain, Jawad; Hoque, Mohammed Moshiul</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Dynamic Modality and View Selection for Emotion Recognition - Missing Modality Evaluation</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Menon, Luciana; Neduziak, Luiz Carlos; Barddal, Jean Paul; Lameiras Koerich, Alessandro; Britto, Alceu</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Image Fusion Survey: A Novel Taxonomy Integrating Transformer and Recent Approaches</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Bernardi, Gwendal; Strubel, David; Brisebarre, Godefroy; Garin, Jean-François; Dellandrea, Emmanuel; Ardabilian, Mohsen</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Comprehensive Perceptual Analysis and Rating of Material Properties from Video Data</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Filip, Jiri; Dechterenko, Filip; Lukavsky, Jiri; Fleming, Roland; Schmidt, Filipp</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">SD-SORT - Self Driving SORT for Autonomous Vehicle</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Shinde, Omkar; Eskandarian, Azim</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Vision-Language Multimodal Fusion in Dermatological Disease Classification</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">La Quatra, Moreno; Cilia, Nicole Dalia; Conti, Vincenzo; Sorce, Salvatore; Garraffa, Giovanni; Salerno, Valerio Mario</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="paper-title">Plastic Waste Detection Using YOLOv5 Deep Learning Object Detection Algorithm</div>
+                    </td>
+                    <td>
+                      <div class="paper-authors">Prasad, Rima; Musale, Jitendra; Nagare, Dhanashri</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="footer-container"></div>
+</body>
+</html>
